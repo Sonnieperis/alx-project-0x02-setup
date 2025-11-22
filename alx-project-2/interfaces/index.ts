@@ -1,7 +1,11 @@
-export interface SimplePageProps {
-  title?: string;
-}
-export interface CardProps {
+export type ButtonSize = "small" | "medium" | "large";
+export type ButtonShape = "rounded-sm" | "rounded-md" | "rounded-full";
+
+export interface ButtonProps {
   title: string;
-  content: string;
+  size?: ButtonSize;
+  shape?: ButtonShape;
+  onClick?: () => void;
+  className?: string;
 }
+
