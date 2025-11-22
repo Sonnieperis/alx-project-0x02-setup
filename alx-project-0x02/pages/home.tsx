@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
+
+const HomePage: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <main className="p-8">
+        <h1 className="text-3xl font-bold mb-4">Home Page</h1>
+        <p>Welcome to the home page!</p>
+      </main>
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
